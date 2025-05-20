@@ -25,8 +25,10 @@ public class Game {
 	private Double score;
 	private String imgUrl;
 	
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
 	public Game() {
@@ -47,11 +49,11 @@ public class Game {
 
 
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -63,11 +65,11 @@ public class Game {
 		this.title = title;
 	}
 
-	public int getYear() {
+	public Integer getYear() {
 		return year;
 	}
 
-	public void setYear(int year) {
+	public void setYear(Integer year) {
 		this.year = year;
 	}
 
@@ -87,11 +89,11 @@ public class Game {
 		this.platforms = platforms;
 	}
 
-	public double getScore() {
+	public Double getScore() {
 		return score;
 	}
 
-	public void setScore(double score) {
+	public void setScore(Double score) {
 		this.score = score;
 	}
 
