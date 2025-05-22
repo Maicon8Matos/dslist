@@ -15,7 +15,7 @@ public class GameDTO {
 	private String longDescription;
 	
 	public GameDTO() {}
-
+	
 	public GameDTO(Game entity) {
 		this.id = entity.getId();
 		this.title = entity.getTitle();
